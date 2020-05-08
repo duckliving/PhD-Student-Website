@@ -1,0 +1,113 @@
+/*Fixed flexible sidebar with CSS grid*/
+body {
+  font-family: baskerville-urw, serif;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.3;
+}
+
+p {
+    font-size: 21px;
+}
+
+header {
+  display: flex;
+  position: fixed;
+  z-index: 1;
+  top: 0px;
+  left: 0px;
+  background-color: powderblue;
+  width: 100%;
+  height: 100px;
+}
+
+header .display-name {
+  display: flex;
+  margin-left: 150px
+  margin-right: 150px
+}
+
+div h2 {
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.page {
+  background-color: lavender;
+  padding-left: 200px;
+  padding-right: 200px;
+  margin-top: 100px;
+  display: grid;
+  grid-template-columns: 20vw auto;
+}
+
+.sidebar {
+  margin-left: 150px;
+  background-color: beige;
+  position: fixed;
+  width: 20vw;
+  padding: 20px;
+  text-align: center;
+}
+
+.main {
+  background-color: antiquewhite;
+  grid-column-start: 2;
+  padding-left: 20px;
+  padding-right: 20px;
+  max-width: 750px;
+}
+
+.profile-thumbnail {
+  width: auto;
+  height: 300px;
+  object-fit: cover;
+}
+
+
+/*
+
+
+
+
+
+.content {
+  height: 80vh;
+  width: 80vw;
+  border: 2px dashed black;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sidebar {
+  width: 550px;
+  height: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 125px;
+  left: 0px;
+  background-color: #EEEE;
+  overflow-x: hidden;
+  padding-top: 20px;
+  text-align: center;
+}
+
+.sidebar a {
+  padding: 10px 50px 10px 50px;
+  text-decoration: none;
+  font-size: 18px;
+  color: #818181;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.main {
+  margin: 200px;
+  max-width: 1079.98px;
+  line-height: 32px;
+  padding: 40px 10px;
+  background-color: #818181;
+}
